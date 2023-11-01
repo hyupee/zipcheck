@@ -1,14 +1,16 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {
-  HomeStackParamList,
+  CheckStackParamList,
   MainStackParamList,
   RootStackParamList,
 } from './Navigation.types';
 import { HomeScreen } from './screens/Home/HomeScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { ListScreen } from './screens/List/ListScreen';
+import { CheckScreen } from './screens/Check/CheckScreen';
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
+const CheckStack = createNativeStackNavigator<CheckStackParamList>();
 const MainTab = createBottomTabNavigator<MainStackParamList>();
 
 export const Navigation = () => {
@@ -19,7 +21,24 @@ export const Navigation = () => {
         component={MainTabs}
         options={{ headerShown: false }}
       />
+      <RootStack.Screen
+        name="Check"
+        component={CheckNavigation}
+        options={{ headerShown: false }}
+      />
     </RootStack.Navigator>
+  );
+};
+
+export const CheckNavigation = () => {
+  return (
+    <CheckStack.Navigator initialRouteName="First">
+      <CheckStack.Screen
+        name="First"
+        component={CheckScreen}
+        options={{ headerShown: false }}
+      />
+    </CheckStack.Navigator>
   );
 };
 
