@@ -1,0 +1,88 @@
+import { Room } from '@/models/room';
+
+export const roomList: Room[] = [
+  {
+    id: '1',
+    imageUrl:
+      'https://ic.zigbang.com/ic/items/39033499/1.jpg?w=800&h=600&q=70&a=1',
+    salesTypes: '월세',
+    depositPrice: 3000,
+    rentPrice: 30,
+    size: 10,
+    floor: 1,
+    address: '송파구 방이동',
+    roomTypes: '원룸',
+    maintenanceFee: 15,
+    loanable: false,
+  },
+  {
+    id: '2',
+    imageUrl:
+      'https://ic.zigbang.com/ic/items/39015341/1.jpg?w=400&h=300&q=70&a=1',
+    salesTypes: '전세',
+    depositPrice: 25000,
+    rentPrice: 0,
+    size: 10,
+    floor: 1,
+    address: '송파구 방이동',
+    roomTypes: '투룸',
+    maintenanceFee: 15,
+    loanable: true,
+  },
+  {
+    id: '3',
+    imageUrl:
+      'https://ic.zigbang.com/ic/items/38814007/1.jpg?w=400&h=300&q=70&a=1',
+    salesTypes: '전세',
+    depositPrice: 33000,
+    rentPrice: 0,
+    size: 10,
+    floor: 1,
+    address: '송파구 방이동',
+    roomTypes: '원룸',
+    maintenanceFee: 15,
+    loanable: true,
+  },
+  {
+    id: '4',
+    imageUrl:
+      'https://ic.zigbang.com/ic/items/38975179/1.jpg?w=400&h=300&q=70&a=1',
+    salesTypes: '전세',
+    depositPrice: 33000,
+    rentPrice: 0,
+    size: 10,
+    floor: 1,
+    address: '송파구 방이동',
+    roomTypes: '원룸',
+    maintenanceFee: 15,
+    loanable: true,
+  },
+  {
+    id: '5',
+    imageUrl:
+      'https://ic.zigbang.com/ic/items/39033599/1.jpg?w=800&h=600&q=70&a=1',
+    salesTypes: '전세',
+    depositPrice: 33000,
+    rentPrice: 0,
+    size: 10,
+    floor: 1,
+    address: '송파구 방이동',
+    roomTypes: '원룸',
+    maintenanceFee: 15,
+    loanable: true,
+  },
+  {
+    id: '6',
+    imageUrl:
+      'https://ic.zigbang.com/ic/items/39033699/1.jpg?w=800&h=600&q=70&a=1',
+    salesTypes: '전세',
+    depositPrice: 33000,
+    rentPrice: 0,
+    size: 10,
+    floor: 1,
+    address: '송파구 방이동',
+    roomTypes: '원룸',
+    maintenanceFee: 15,
+    loanable: true,
+  },
+];

@@ -1,23 +1,26 @@
-import { PropsWithChildren } from 'react';
-import styled, { css } from '@emotion/native';
+import { colors, getColor } from '@/libs/theme/colors';
 import {
   Typography as TypographyType,
   TypographyVariant,
 } from '@/libs/theme/typography/typography';
-import { colors, getColor } from '@/libs/theme/colors';
+import styled, { css } from '@emotion/native';
+import { PropsWithChildren } from 'react';
+import { StyleProp, TextStyle } from 'react-native';
 
 interface Props {
+  style?: StyleProp<TextStyle>;
   variant: TypographyVariant;
   color?: keyof typeof colors;
 }
 
 export const Typography = ({
+  style,
   children,
   variant,
   color,
 }: PropsWithChildren<Props>) => {
   return (
-    <Text variant={variant} color={color}>
+    <Text style={style} variant={variant} color={color}>
       {children}
     </Text>
   );

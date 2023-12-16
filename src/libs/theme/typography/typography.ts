@@ -3,6 +3,7 @@ import { createTypographyToken } from '../utils';
 export type TypographyVariant =
   | 'headline/28-black'
   | 'headline/24-bold'
+  | 'headline/16-bold'
   | 'title/18-bold'
   | 'title/16-bold'
   | 'body/14-medium'
@@ -29,6 +30,12 @@ export const typography: Record<TypographyVariant, Typography> = {
     fontSize: 24,
     fontWeight: 700,
     lineHeight: 24 * 1.5,
+    fontFamily: 'Pretendard-Bold',
+  }),
+  'headline/16-bold': createTypographyToken({
+    fontSize: 16,
+    fontWeight: 700,
+    lineHeight: 16 * 1.5,
     fontFamily: 'Pretendard-Bold',
   }),
   'title/18-bold': createTypographyToken({
